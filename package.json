@@ -1,0 +1,46 @@
+{
+  "name": "wx-hot-topic",
+  "private": true,
+  "version": "0.0.1",
+  "description": "模拟热搜",
+  "main": "index.js",
+  "scripts": {
+    "dev": "codelet-cli-service dev --watch --config codelet.config.js",
+    "build": "codelet-cli-service build --watch --config codelet.config.js"
+  },
+  "keywords": [
+    "daysnap",
+    "codelet",
+    "wechat",
+    "miniprogram",
+    "playground",
+    "mini"
+  ],
+  "author": "kassadin",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.24.1",
+    "@codelet/core": "^0.0.25",
+    "@pkstar/utils": "^0.0.3"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.24.3",
+    "@codelet/cli-service": "^0.0.8",
+    "@codelet/copy-loader": "^0.0.7",
+    "@codelet/inject-chunk-webpack-plugin": "^0.0.7",
+    "@codelet/wxml-loader": "^0.0.7",
+    "@pkstar/define-sass": "^0.0.7",
+    "@types/webpack-env": "^1.18.4",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-simple-import-sort": "^12.0.0",
+    "eslint-plugin-wxml": "^0.7.5",
+    "miniprogram-api-typings": "^3.12.2",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0"
+  }
+}

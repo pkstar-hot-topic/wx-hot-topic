@@ -1,0 +1,36 @@
+@import '@/assets/scss/define';
+
+page {
+  @extend %df;
+  @extend %fdc;
+  @extend %jcc;
+  @extend %bsb;
+  @extend %aic;
+  background-color: #fff;
+  padding: j(48) 0 j(64);
+}
+.logo {
+  border-radius: j(16);
+  width: j(100);
+  height: j(100);
+}
+.title {
+  @extend %c3;
+  @extend %df;
+  @extend %aic;
+  font-size: j(22);
+  padding: 0 j(32);
+  line-height: j(30);
+  margin-top: j(32);
+  .strong {
+    @extend %fwb;
+    margin-left: j(10);
+  }
+}
+.sub-title {
+  @extend %c3;
+  padding: 0 j(32);
+  margin-top: j(10);
+  line-height: j(18);
+  font-size: j(13);
+}

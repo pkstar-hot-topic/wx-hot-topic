@@ -1,0 +1,44 @@
+@import '@/assets/scss/define';
+@import '@/assets/scss/iconfont';
+
+page {
+  @extend %bsb;
+  background-color: $color-background;
+  min-height: 100%;
+}
+
+.c-button {
+  @extend %df;
+  @extend %aic;
+  @extend %jcc;
+  @extend %cfff;
+  @extend %cp;
+  @extend %ma;
+  @extend %ats;
+  margin-top: auto;
+  font-size: j(16);
+  background-color: $color-primary;
+  height: j(50);
+  width: j(315);
+  border-radius: j(25);
+  &.disabled,
+  &:disabled,
+  &[disabled] {
+    color: #fff !important;
+    background-color: #ddd !important;
+  }
+  &:after {
+    @extend %dn;
+  }
+  &.is-mt {
+    margin-top: j(48);
+  }
+}
+
+.c-bar {
+  height: j(10);
+}
+
+.c-placeholder {
+  @extend %cc;
+}
