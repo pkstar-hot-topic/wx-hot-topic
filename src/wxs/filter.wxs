@@ -1,0 +1,8 @@
+module.exports = {
+  formatPickerData: function (columnsData, keyWordsOfShow, strKeyWords) {
+    return columnsData.filter(function (item) {
+      console.log(item[keyWordsOfShow], strKeyWords)
+      return item[keyWordsOfShow].indexOf(strKeyWords.trim()) > -1
+    })
+  },
+}
