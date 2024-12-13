@@ -26,7 +26,14 @@ export const doSmsCodeSend = withLoading((data: { userId: string }) =>
 	curl(`app/captcha/sms`, data)
 )
 
-// 获取验证码
+// 虚拟热搜
 export const doHotTopicShoot = withLoading((data: { userId: string }) =>
 	curl(`app/captcha/sms`, data)
 )
+
+// 热搜类型字典
+export const hotTopicTypeList = [
+	{ label: '微博热搜', value: 'weibo' },
+	{ label: '抖音热搜', value: 'douyin' },
+	{ label: '百度热搜', value: 'baidu' },
+]

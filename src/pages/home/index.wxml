@@ -1,6 +1,13 @@
-<view>
-  <text wx:if="{{ error }}">error: {{ error }}</text>
-  <text wx:else>data => {{ data }}</text>
+<view class="platform-warp">
+	<view class="platform-title">
+		<text> 热搜模版 </text>
+	</view>
+	<view
+		class="platform-item"
+		wx:for="{{ platforms }}"
+		wx:key="index"
+		bindtap="transfer(item)"
+	>
+		<image class="img" src="{{ item.img }}"></image>
+	</view>
 </view>
-
-<button bindtap="fetchData">刷新</button>

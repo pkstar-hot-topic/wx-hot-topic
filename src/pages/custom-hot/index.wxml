@@ -1,0 +1,22 @@
+<view class="c-form" wx-for="item in dataArr" wx:key="{{ index }}">
+	<view class="c-field">
+		<text class="label"> 热搜标题 </text>
+		<input class="value" type="text" placeholder="请输入" />
+	</view>
+	<picker range="{{ options }}" range-key="label" mode="selector">
+		<view class="c-field">
+			<view class="label">
+				<text> 热搜类型 </text>
+			</view>
+			<view class="value">
+				<text> 请选择 </text>
+			</view>
+			<view class="iconfont icon-arrow"></view>
+		</view>
+	</picker>
+	<view class="c-bar"> </view>
+	<view class=""> 22 </view>
+</view>
+<button class="c-button is-mt default" bindtap="handleAdd">添加一条</button>
+
+<button class="c-button is-mt" bindtap="handleLogout">立即生成</button>

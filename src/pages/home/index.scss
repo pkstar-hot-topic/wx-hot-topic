@@ -1,1 +1,38 @@
 @import '@/assets/scss/define';
+
+.platform-warp {
+	width: j(355);
+	margin: j(10) auto;
+}
+
+.platform-title {
+	line-height: j(40);
+	padding-left: j(15);
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 50%;
+		width: j(5);
+		height: j(16);
+		background-color: $color-primary;
+		transform: translateY(-50%);
+		border-radius: j(2);
+	}
+}
+
+.platform-item {
+	width: 100%;
+	height: j(175);
+	background-color: #fff;
+	border-radius: j(8);
+	margin-bottom: j(20);
+	box-shadow: 0 0 j(3) $color-background;
+	overflow: hidden;
+	.img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+}

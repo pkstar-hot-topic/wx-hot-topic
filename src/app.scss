@@ -2,43 +2,88 @@
 @import '@/assets/scss/iconfont';
 
 page {
-  @extend %bsb;
-  background-color: $color-background;
-  min-height: 100%;
+	@extend %bsb;
+	background-color: $color-background;
+	min-height: 100%;
 }
 
 .c-button {
-  @extend %df;
-  @extend %aic;
-  @extend %jcc;
-  @extend %cfff;
-  @extend %cp;
-  @extend %ma;
-  @extend %ats;
-  margin-top: auto;
-  font-size: j(16);
-  background-color: $color-primary;
-  height: j(50);
-  width: j(315);
-  border-radius: j(25);
-  &.disabled,
-  &:disabled,
-  &[disabled] {
-    color: #fff !important;
-    background-color: #ddd !important;
-  }
-  &:after {
-    @extend %dn;
-  }
-  &.is-mt {
-    margin-top: j(48);
-  }
+	@extend %df;
+	@extend %aic;
+	@extend %jcc;
+	@extend %cfff;
+	@extend %cp;
+	@extend %ma;
+	@extend %ats;
+	margin-top: auto;
+	font-size: j(16);
+	background-color: $color-primary;
+	height: j(50);
+	width: j(315);
+	border-radius: j(25);
+	&.default {
+		background-color: #fff;
+		color: #666;
+		border: #ccc 1px solid;
+	}
+	&.disabled,
+	&:disabled,
+	&[disabled] {
+		color: #fff !important;
+		background-color: #ddd !important;
+	}
+	&:after {
+		@extend %dn;
+	}
+	&.is-mt {
+		margin-top: j(48);
+	}
 }
 
 .c-bar {
-  height: j(10);
+	height: j(10);
 }
 
 .c-placeholder {
-  @extend %cc;
+	@extend %cc;
+}
+
+/* 表单相关 */
+.c-form {
+	background-color: #fff;
+	.c-field:not(:last-child) {
+		@extend %bwb;
+	}
+}
+.c-field {
+	@extend %df;
+	@extend %aic;
+	@extend %ma;
+	@extend %bsb;
+	@extend %c3;
+	width: j(343);
+	margin: 0 auto;
+	background-color: #fff;
+	padding: j(14) j(16);
+	background-color: #fff;
+	display: flex;
+	font-size: j(16);
+	min-height: j(24 + 14 + 14);
+	// margin-bottom: j(10);
+	.label {
+		color: #333;
+		margin-right: j(10);
+	}
+	.value {
+		@extend %df1;
+		@extend %tar;
+		@extend %c9;
+	}
+	.icon-arrow {
+		@extend %cc;
+		margin-left: j(6);
+	}
+	&.is-arrow {
+		@extend %ats;
+	}
 }

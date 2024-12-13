@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "添加内容",
+  "usingComponents": {
+    "pro-cell": "/components/pro-cell/index"
+  }
+}
