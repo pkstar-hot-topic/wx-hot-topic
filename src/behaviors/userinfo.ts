@@ -1,7 +1,7 @@
-import { createBehavior } from '@codelet/core'
+import { createBehavior } from "@codelet/core";
 
-import type { Userinfo } from '@/types'
-import { userinfoStorage } from '@/utils'
+import type { Userinfo } from "@/types";
+import { userinfoStorage } from "@/utils";
 
 export const UserinfoBehavior = createBehavior({
   data: {
@@ -12,16 +12,18 @@ export const UserinfoBehavior = createBehavior({
      * 获取用户信息
      */
     userinfoGet() {
-      const userinfo = userinfoStorage.getItem()
-      this.setData({ userinfo })
+      const userinfo = userinfoStorage.getItem() || null;
+      console.log("userinfoGet", userinfo);
+      this.setData({ userinfo });
+      console.log("userinfoGet", this.data.userinfo);
     },
 
     /**
      * 用户退出
      */
     userinfoLogout() {
-      userinfoStorage.removeItem()
-      this.setData({ userinfo: null })
+      userinfoStorage.removeItem();
+      this.setData({ userinfo: null });
     },
   },
-})
+});

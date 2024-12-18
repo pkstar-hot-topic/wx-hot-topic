@@ -1,0 +1,16 @@
+@import '@/assets/scss/define';
+page{
+  background-color: #fff;
+}
+.title{
+  font-size: j(24);
+  font-weight: bold;
+  @extend %tac;
+
+}
+.content{
+  padding: j(10);
+  @extend %df;
+  @extend %fdc;
+  @extend %aic;
+}

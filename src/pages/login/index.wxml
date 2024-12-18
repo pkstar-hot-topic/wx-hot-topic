@@ -1,12 +1,14 @@
-<!-- <image class="logo" src1="/assets/images/logo.png"></image> -->
-
+<image class="logo" src="/assets/images/logo.png"></image>
 <view class="title">
-	<text>欢迎使用</text>
-	<text class="strong">照片达人</text>
+		<text>欢迎使用</text>
+		<text class="strong">热话题</text>
 </view>
-
 <view class="sub-title">
-	<text>登录后 享更多精彩服务</text>
+		<text>登录后 享更多精彩服务</text>
 </view>
-
-<button class="c-button" bindtap="handleSubmit">快捷登录</button>
+<button disabled="{{ !isAgreement }}" class="c-button" bindtap="handleSubmit">快捷登录</button>
+<view class="agreement" data-prop="isAgreement" data-value="{{ !isAgreement }}" bindtap="modelTransfer">
+		<view class="iconfont {{isAgreement ? 'icon-passed' : 'icon-circle'}}"></view>
+		我已阅读并同意
+		<text class="link" data-url="/pages/agreement/index" catchtap="transfer">《用户服务协议》</text>
+</view>

@@ -1,3 +1,2 @@
 <user-section userinfo="{{ userinfo }}"></user-section>
-
 <menu-section></menu-section>

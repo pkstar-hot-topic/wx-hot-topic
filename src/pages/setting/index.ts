@@ -1,38 +1,39 @@
-import './index.json'
-import './index.wxml'
-import './index.scss'
+import "./index.json";
+import "./index.wxml";
+import "./index.scss";
 
-import col, { createPage } from '@codelet/core'
+import col, { createPage, TransferBehavior } from "@codelet/core";
 
-import { UserinfoBehavior } from '@/behaviors'
+import { UserinfoBehavior } from "@/behaviors";
 
 createPage({
-  behaviors: [UserinfoBehavior],
+  behaviors: [UserinfoBehavior, TransferBehavior],
   data: {
     menus: [
       {
-        label: '权限管理',
+        label: "权限管理",
         arrow: true,
-        url: '/pages/webview/index',
-        link: 'https://ajuan.daysnap.cn/',
+        fn: "handleAuth",
       },
       {
-        label: '用户服务协议',
+        label: "用户服务协议",
         arrow: true,
-        url: '/pages/webview/index',
-        link: 'https://ajuan.daysnap.cn/',
+        url: "/pages/agreement/index",
       },
     ],
   },
+  handleAuth() {
+    col.openSetting({});
+  },
   async handleLogout() {
     const result = await col.showModal({
-      title: '温馨提示',
-      content: '确定要退出登录吗？',
-    })
+      title: "温馨提示",
+      content: "确定要退出登录吗？",
+    });
     if (result.cancel) {
-      return
+      return;
     }
-    this.userinfoLogout()
-    col.showToast({ title: '退出成功' })
+    this.userinfoLogout();
+    col.showToast({ title: "退出成功" });
   },
-})
+});

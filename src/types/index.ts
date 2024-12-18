@@ -1,1 +1,2 @@
-export * from './Userinfo'
+export * from "./Userinfo";
+export * from "./screenshoot";

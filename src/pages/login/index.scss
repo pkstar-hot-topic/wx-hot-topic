@@ -34,3 +34,17 @@ page {
   line-height: j(18);
   font-size: j(13);
 }
+
+.agreement{
+  font-size: j(14);
+  margin-top: j(20);
+  line-height: j(30);
+  color: #666;
+  .link{
+    color: $color-primary;
+  }
+  .iconfont{
+    font-size: j(16);
+    margin-right: j(5);
+  }
+}
