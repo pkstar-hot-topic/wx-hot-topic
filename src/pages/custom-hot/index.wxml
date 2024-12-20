@@ -1,4 +1,5 @@
 <wxs src="/wxs/filter.wxs" module="filter" />
+<view class="c-bar"></view>
 <view class="c-form">
   <block wx:for="{{ dataArr }}" wx:key="index">
     <view class="c-field">
@@ -19,5 +20,5 @@
     <view class="c-bar"></view>
   </block>
 </view>
-<button class="c-button is-mt default" bindtap="handleAdd">添加一条</button>
+<button class="c-button is-mt default" bindtap="handleAdd">增加一条</button>
 <button class="c-button c-mt-20" bindtap="handleSubmit">立即生成</button>

@@ -1,0 +1,4 @@
+<image class="img" src="{{query.filePath}}" data-urls="{{[query.filePath]}}" bindtap="previewImage" mode="widthFix" lazy-load="false"></image>
+<pro-fixed-bottom height="124">
+  <button class="c-button c-mt-20" bindtap="handleSave">保存相册</button>
+</pro-fixed-bottom>

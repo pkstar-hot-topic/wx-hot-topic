@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "查看结果",
+  "usingComponents": {
+     "pro-fixed-bottom": "/components/pro-fixed-bottom/index"
+  }
+}

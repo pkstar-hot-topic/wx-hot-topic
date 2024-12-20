@@ -27,7 +27,7 @@ instance.interceptors.response.use(
     console.log("response", response);
     // 对响应数据做点什么
     const { data: respData } = response;
-    log(response, "请求返回 => ", respData);
+    log(response.config, "请求返回 => ", respData);
 
     if (!respData) {
       return Promise.reject(`网络繁忙，请稍后再试(1)`);

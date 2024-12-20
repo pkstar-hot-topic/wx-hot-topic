@@ -1,0 +1,6 @@
+<view class="pro-fixed-bottom-seat" style="height: {{ height }}px"></view>
+<view class="pro-fixed-bottom" style="padding: {{ padding }}">
+  <view class="pro-fixed-bottom-content">
+    <slot></slot>
+  </view>
+</view>

@@ -102,17 +102,11 @@ createPage({
       data: base64,
     });
 
-    // 获取相册权限
-    await requestAuthorize({
-      scope: "scope.writePhotosAlbum",
-    });
-    // 保存图片到相册
-    await col.saveImageToPhotosAlbum({
-      filePath,
-    });
-
-    col.showToast({
-      title: "保存成功",
+    col.navigateTo({
+      url: `/pages/result/index`,
+      query: {
+        filePath,
+      },
     });
   },
 });

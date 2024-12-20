@@ -35,8 +35,7 @@ export const doHotTopicShoot = withLoading(
 );
 
 // 热搜类型字典
-export const reqHotTopicType = withLoading((data: { type: HotPlatform }) =>
+export const reqHotTopicType = (data: { type: HotPlatform }) =>
   curl(`api/v1/screen-shot/dic`, data, {
     method: "POST",
-  })
-);
+  });

@@ -42,6 +42,7 @@ page {
 
 .c-bar {
 	height: j(10);
+	background-color: $color-background;
 }
 
 .c-placeholder {
@@ -61,15 +62,11 @@ page {
 	@extend %ma;
 	@extend %bsb;
 	@extend %c3;
-	width: j(343);
 	margin: 0 auto;
+	padding: j(10) j(16);
 	background-color: #fff;
-	padding: j(14) j(16);
-	background-color: #fff;
-	display: flex;
-	font-size: j(16);
-	min-height: j(24 + 14 + 14);
-	// margin-bottom: j(10);
+	font-size: j(14);
+	line-height: j(24);
 	.label {
 		color: #333;
 		margin-right: j(10);
@@ -78,6 +75,7 @@ page {
 		@extend %df1;
 		@extend %tar;
 		@extend %c9;
+		height: 1.8em;
 	}
 	.icon-arrow {
 		@extend %cc;

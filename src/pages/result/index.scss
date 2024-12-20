@@ -1,0 +1,13 @@
+@import '@/assets/scss/define';
+
+page{
+  width: 100%;
+  @extend %df;
+  @extend %aic;
+  @extend %fdc;
+}
+.img{
+  width: 80%;
+  height: auto;
+  margin: j(20) auto 0;
+}
