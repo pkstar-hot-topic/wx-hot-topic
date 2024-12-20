@@ -16,13 +16,13 @@ createComponent({
       //   link: "https://ajuan.daysnap.cn/",
       // },
 
-      {
-        label: "反馈与建议",
-        icon: "icon-newspaper-o",
-        arrow: true,
-        url: "/pages/webview/index",
-        link: "https://ajuan.daysnap.cn/",
-      },
+      // {
+      //   label: "反馈与建议",
+      //   icon: "icon-newspaper-o",
+      //   arrow: true,
+      //   url: "/pages/webview/index",
+      //   link: "https://ajuan.daysnap.cn/",
+      // },
       {
         label: "用户服务协议",
         icon: "icon-info-o",

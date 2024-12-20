@@ -16,6 +16,9 @@ createPage({
     isAgreement: false,
   },
   async handleSubmit() {
+    if (!this.data.isAgreement) {
+      return col.showToast({ title: "请先阅读并同意用户服务协议" });
+    }
     await withLoading(async () => {
       await sleep(1000);
       userinfoStorage.setItem({

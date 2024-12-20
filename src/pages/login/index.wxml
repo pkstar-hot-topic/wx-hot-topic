@@ -6,7 +6,7 @@
 <view class="sub-title">
 		<text>登录后 享更多精彩服务</text>
 </view>
-<button disabled="{{ !isAgreement }}" class="c-button" bindtap="handleSubmit">快捷登录</button>
+<button class="c-button" bindtap="handleSubmit">快捷登录</button>
 <view class="agreement" data-prop="isAgreement" data-value="{{ !isAgreement }}" bindtap="modelTransfer">
 		<view class="iconfont {{isAgreement ? 'icon-passed' : 'icon-circle'}}"></view>
 		我已阅读并同意

@@ -39,12 +39,12 @@ createPage({
         img: "/assets/images/b-baidu.png",
         url: "/pages/custom-hot/index",
       },
-      {
-        name: "抖音热点",
-        value: "douyin",
-        img: "/assets/images/b-douyin.png",
-        url: "/pages/custom-hot/index",
-      },
+      // {
+      //   name: "抖音热点",
+      //   value: "douyin",
+      //   img: "/assets/images/b-douyin.png",
+      //   url: "/pages/custom-hot/index",
+      // },
     ],
   },
   async fetchData() {

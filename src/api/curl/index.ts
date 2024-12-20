@@ -2,6 +2,7 @@ import { Curl, type CurlRequestConfig } from "@codelet/core";
 
 import { log } from "./log";
 
+// export const baseURL = "http://10.50.105.9:9999/"; // https://hot.pkstar.cn/
 export const baseURL = "https://hot.pkstar.cn/";
 
 const instance = new Curl({
